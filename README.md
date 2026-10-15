@@ -46,11 +46,11 @@ Para cada repositório, escolha uma prática ou dado de teste relevante e expliq
 
 ### Repositório 1 
 
-Repositório: `<URL_DO_REPOSITÓRIO>`
+Repositório: `https://github.com/vercel/ai`
 
-URL TestMiner: `<URL_NO_TESTMINER>`
+URL TestMiner: `https://andrehora.github.io/testminer/#vercel/ai`
 
-Explicação: `<SUA_EXPLICAÇÃO>`
+Explicação: Este repositório é um SDK para a construcao de Agentes de IA com Typescript. Escolhi esse repositório para analisar como estão se adaptando as práticas de testes de software para incluir a interacao com LLMs. Pelo que analisei, os testes seguem padrões para mockar os modelos como servicos externos e testam apenas a parte que é garantida pelo SDK, como a preservacao de campos retornados pela API da openAI ('should preserve orchestration usage fields in raw') e garantir que combinacoes de parametros inválidos sejam barrados de serem enviados para a API, e também que os parametros enviados pelo SDK sejam propagados corretamente ao provedor. A prática de teste aqui é condizente com os padroes da industria de mockar servicos externos e realizar o teste apenas com o comportamento que é de propriedade do código a ser testado. Eles utilizam também uma biblioteca de fixtures que contém um repositório de respostas da API da OpenAI para utilizar como base para os mocks. Fontes: (teste unitário 1)[https://github.com/vercel/ai/blob/main/packages/openai/src/responses/openai-responses-language-model.test.ts] e (teste unitário 2)[https://github.com/vercel/ai/blob/main/packages/prodia/src/prodia-image-model.test.ts]
 
 ### Repositório 2
 
